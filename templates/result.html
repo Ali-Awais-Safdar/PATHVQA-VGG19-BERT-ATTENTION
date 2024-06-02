@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #244855;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #874f41;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #90aead;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        a {
+            color: #9b6c29;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #fbe9d0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Result for Model {{ model_choice }} at Index {{ index }}</h1>
+        <p><strong>Question:</strong> {{ question }}</p>
+        <p><strong>Actual Answer:</strong> {{ actual_answer }}</p>
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
